@@ -17,3 +17,5 @@ with open(filename, newline='') as csvfile:
 
 #TASK
 # Convert population value into Numerical Values
+population = int(float(row[3]))
+print(country_name + ": " + str(population))
