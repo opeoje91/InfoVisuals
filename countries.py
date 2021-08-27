@@ -1,7 +1,6 @@
 # Summary: 
 
 # import modules
-from io import TextIOBase
 from pygal.maps.world import COUNTRIES
 from pygal_maps_world import i18n
 
