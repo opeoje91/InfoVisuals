@@ -1,11 +1,16 @@
 # Summary: Test functions 
 
 # import modules
-import countryCodes as c
+import countryCodes as cc
 
 # Methods: Test valid function
-print(c.getCountryCode('Andorra'))
-print(c.getCountryCode("Nigeria"))
+print(cc.getCountryCode('Andorra'))
+print(cc.getCountryCode("Nigeria"))
 
 #test invalid function
-print(c.getCountryCode('Texas'))
+print(cc.getCountryCode('Texas'))
+
+#test numerical value of population
+populationData = cc.loadPopData("population.csv")
+print(f'{populationData[0][0]} : {cc.convertPopValToNumericalValue(populationData[0][3])}')
+
